@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class Weather{
 
@@ -100,6 +101,10 @@ class Weather{
         self._city = city
     }
     
+    
+    func GetWeatherData(){
+        
+    }
     
     
 }
