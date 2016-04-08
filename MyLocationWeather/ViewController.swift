@@ -9,17 +9,67 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var weather: Weather!
+    
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var sunrise: UILabel!
+    @IBOutlet weak var sunset: UILabel!
+    @IBOutlet weak var clouds: UILabel!
+    @IBOutlet weak var wind: UILabel!
+    @IBOutlet weak var humidity: UILabel!
+    @IBOutlet weak var pressure: UILabel!
+    @IBOutlet weak var rain: UILabel!
+    
+    let kharkiv = Weather(city: "Kharkiv")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        kharkiv.GetWeatherData{ () -> () in
+            // this will be called after Download is done
+            print("HEYY")
+            
+            self.UpdateUI()
+            
+        }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func UpdateUI(){
+        city.text = kharkiv.city
+        country.text = kharkiv.country
+        temperature.text = kharkiv.temperature
+        sunrise.text = kharkiv.sunrise
+        sunset.text = kharkiv.sunset
+        clouds.text = kharkiv.clouds
+        wind.text = kharkiv.wind
+        humidity.text = kharkiv.humidity
+        pressure.text = kharkiv.pressure
+        rain.text = kharkiv.rain
+        
     }
+    
+//    func selectingBg(){
+//        
+//        let eveningTime = (kharkiv.sunset as NSString).substringWithRange(NSMakeRange(0, 2))
+//        let morninTime = (kharkiv.sunrise as NSString).substringWithRange(NSMakeRange(0, 2))
+//        
+//        let finalEveningTime = eveningTime.stringByReplacingOccurrencesOfString(":", withString: "")
+//        let finalMorningTime = morninTime.stringByReplacingOccurrencesOfString(":", withString: "")
+//        
+//        if let evening = Int(finalEveningTime){
+//            if let morning = Int(finalMorningTime){
+//                
+//                if let evening >= hour
+//            }
+//        }
+//    
+//    }
 
-
+    
 }
 
