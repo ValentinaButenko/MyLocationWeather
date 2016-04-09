@@ -52,23 +52,6 @@ class ViewController: UIViewController {
         rain.text = kharkiv.rain
         
     }
-    
-//    func selectingBg(){
-//        
-//        let eveningTime = (kharkiv.sunset as NSString).substringWithRange(NSMakeRange(0, 2))
-//        let morninTime = (kharkiv.sunrise as NSString).substringWithRange(NSMakeRange(0, 2))
-//        
-//        let finalEveningTime = eveningTime.stringByReplacingOccurrencesOfString(":", withString: "")
-//        let finalMorningTime = morninTime.stringByReplacingOccurrencesOfString(":", withString: "")
-//        
-//        if let evening = Int(finalEveningTime){
-//            if let morning = Int(finalMorningTime){
-//                
-//                if let evening >= hour
-//            }
-//        }
-//    
-//    }
 
     
 }
