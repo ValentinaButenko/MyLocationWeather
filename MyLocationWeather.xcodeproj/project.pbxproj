@@ -100,7 +100,6 @@
 			children = (
 				F63981691CB6C403009B37BE /* Weather.swift */,
 				F6C7E98D1CB792170085D541 /* Constants.swift */,
-				F6F3DB731CB9379600B0B9E5 /* DayNightImg.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -109,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F63981561CB4CC9F009B37BE /* Main.storyboard */,
+				F6F3DB731CB9379600B0B9E5 /* DayNightImg.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var weather: Weather!
     
     @IBOutlet weak var city: UILabel!
+    
+    @IBOutlet weak var bgImg: DayNightImg!
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var temperature: UILabel!
     @IBOutlet weak var sunrise: UILabel!
@@ -50,6 +52,9 @@ class ViewController: UIViewController {
         humidity.text = kharkiv.humidity
         pressure.text = kharkiv.pressure
         rain.text = kharkiv.rain
+        
+        bgImg.SelectImage(kharkiv)
+        
         
     }
 

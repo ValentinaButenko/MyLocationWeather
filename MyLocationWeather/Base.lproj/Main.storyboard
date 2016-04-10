@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-iN-NsV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgDay" translatesAutoresizingMaskIntoConstraints="NO" id="8vO-x8-cPs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgDay" translatesAutoresizingMaskIntoConstraints="NO" id="8vO-x8-cPs" customClass="DayNightImg" customModule="MyLocationWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="404"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jDX-dI-wC7">
@@ -250,6 +250,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bgImg" destination="8vO-x8-cPs" id="7cc-JO-Nr4"/>
                         <outlet property="city" destination="Xxa-h1-jPB" id="Au4-4U-h4q"/>
                         <outlet property="clouds" destination="epz-JA-HTq" id="sx3-cN-7gj"/>
                         <outlet property="country" destination="Mcb-So-yaY" id="7mi-gK-7yl"/>
